@@ -3,18 +3,23 @@ package com.MilkCollection.Controller;
 
 
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.MilkCollection.Bean.Farmer;
 
 
 @Controller
 public class Control 
 {
-	@RequestMapping(value="/reg.sp")
-	public String user()
+
+	@RequestMapping(value="/register.sp")
+	public String user(@ModelAttribute Farmer farm )
 	{
-		//String name=cust.getName();
-		System.out.println("Show");
+		String name=farm.getLname();
+		System.out.println("Show"+name);
 		return "Show";
+	
 		
 	}
     

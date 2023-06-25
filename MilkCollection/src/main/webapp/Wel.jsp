@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Welcome</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap-min.css">
      <link href="<c:url value="/resources/css/Style.css"/>" rel="stylesheet"/>
      
@@ -18,7 +18,8 @@
       </header>
       <section>
         <nav>
-            <form action="./reg.sp">
+           
+              <a href="reg.jsp"/>
              <button class="favorite styled" type="submit"> Registration </button>   
               </form>
            <form action="./collect.sp">
