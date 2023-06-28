@@ -1,74 +1,81 @@
 @charset "ISO-8859-1";
-*
-{
-  padding: 0;
-  margin: 1px;
+
+* {
+	padding: 0;
+	margin: 1px;
 }
+
 header {
-    margin: 1px;
-    background-color: #b921e7;
-    padding: 10px;
-    text-align: center;
-    font-size: 25px;
-    color: rgb(17, 14, 14);
-    border-style: double;
-  }
-  section {
-    display: -webkit-flex;
-    display: flex;
-  }
-  nav {
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    background: #ccc;
-    padding: 20px;
-    margin-bottom: 1px;
-    margin-top: 0;
-  }
-  article {
-    -webkit-flex: 3;
-    -ms-flex: 3;
-    flex: 3;
-    background-color: #f1f1f1;
-    padding: 10px;
-  }
-  .styled {
-      width: 100%;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    border: 0;
-    line-height: 2.5;
-    padding: 0 20px;
-    font-size:x-large;
-    text-align: center;
-    color: #fff;
-    text-shadow: 1px 1px 1px #000;
-    border-radius: 15px;
-    background-color: rgba(220, 0, 0, 1);
-    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
-    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+	margin: 1px;
+	background-color: #b921e7;
+	padding: 10px;
+	text-align: center;
+	font-size: 25px;
+	color: rgb(17, 14, 14);
+	border-style: double;
+}
+
+section {
+	display: -webkit-flex;
+	display: flex;
+}
+
+nav {
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	background: #ccc;
+	padding: 20px;
+	margin-bottom: 1px;
+	margin-top: 0;
+}
+
+article {
+	-webkit-flex: 3;
+	-ms-flex: 3;
+	flex: 3;
+	background-color: #f1f1f1;
+	padding: 10px;
+}
+
+.styled {
+	width: 100%;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	border: 0;
+	line-height: 2.5;
+	padding: 0 20px;
+	font-size: x-large;
+	text-align: center;
+	color: #fff;
+	text-shadow: 1px 1px 1px #000;
+	border-radius: 15px;
+	background-color: rgba(220, 0, 0, 1);
+	background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2),
+		rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+	box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px
+		3px rgba(0, 0, 0, 0.6);
 }
 
 .styled:hover {
-    background-color: rgba(255, 0, 0, 1);
+	background-color: rgba(255, 0, 0, 1);
 }
 
 .styled:active {
-    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6), inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+	box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6), inset 2px 2px
+		3px rgba(0, 0, 0, 0.6);
 }
+
 footer {
-    background-color: #db34c5;
-    padding: 10px;
-    text-align: center;
-    color: white;
-    font-size:larger;
-    font-style:italic
-  
-  }
-  
- img
- {
-  width: 1000px;
-  height: 500px;
- }
+	background-color: #db34c5;
+	padding: 5px;
+	text-align: center;
+	color: white;
+	font-size: larger;
+	font-style: italic
+}
+
+img {
+	width: 1000px;
+	height: 500px;
+}

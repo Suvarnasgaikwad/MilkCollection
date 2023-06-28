@@ -1,82 +1,83 @@
 @charset "ISO-8859-1";
-.container
-{
-    border-radius: 5px;
-    background-color:rgb(236, 211, 240);
-    padding: 20px;
-    width: 500px;
-    height:50% ;
-    margin-left: 25%;
-    margin-top: 5%;    
-}
-#txtbox
-{
-  border: none;
-  border-bottom: 2px solid rgb(37, 158, 158);
-  background-color: white;
-  color:darkred;
-  font-size: 14pt;
-  height: 25px;
-  width : 300px;
-}
-.header
-{
-  background-color: rgb(175, 40, 157);
-  text-align: center;
-  border-color: blueviolet;
-  font-size: xx-large;
-  padding: 1.5%;
-  margin: 0%;
-  color: white;
-  margin-bottom: 10%;
-  
+
+.container {
+	border-radius: 5px;
+	background-color: rgb(236, 211, 240);
+	padding: 20px;
+	width: 500px;
+	height: 50%;
+	margin-left: 25%;
+	margin-top: 5%;
 }
 
-  div
-  {
-    text-align: center;
-    font-size:x-large;
-    font: bold;
-    font-style: inherit;
-    margin-top: 5%;
-    margin-left: 0%;
-    padding-left: 0%;
+#txtbox {
+	border: none;
+	border-bottom: 2px solid rgb(37, 158, 158);
+	background-color: white;
+	color: darkred;
+	font-size: 14pt;
+	height: 25px;
+	width: 300px;
+}
 
-  }
-  .styled {
-    padding-bottom: 5%;
-    width: 200px;
-    height: 50px;
-    margin-top: 50px;
-    margin-bottom:25px;
-    border: 0;
-    line-height: 2.5;
-    padding: 0 20px;
-    font-size:x-large;
-    text-align: center;
-    color: #fff;
-    text-shadow: 1px 1px 1px #000;
-    border-radius: 15px;
-    background-color: rgb(51, 205, 216);
-    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
-    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+.header {
+	background-color: rgb(175, 40, 157);
+	text-align: center;
+	border-color: blueviolet;
+	font-size: xx-large;
+	padding: 1.5%;
+	margin: 0%;
+	color: white;
+	margin-bottom: 10%;
+}
+
+div {
+	text-align: center;
+	font-size: x-large;
+	font: bold;
+	font-style: inherit;
+	margin-top: 5%;
+	margin-left: 0%;
+	padding-left: 0%;
+}
+
+.styled {
+	padding-bottom: 5%;
+	width: 200px;
+	height: 50px;
+	margin-top: 50px;
+	margin-bottom: 25px;
+	border: 0;
+	line-height: 2.5;
+	padding: 0 20px;
+	font-size: x-large;
+	text-align: center;
+	color: #fff;
+	text-shadow: 1px 1px 1px #000;
+	border-radius: 15px;
+	background-color: rgb(51, 205, 216);
+	background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2),
+		rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+	box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px
+		3px rgba(0, 0, 0, 0.6);
 }
 
 .styled:hover {
-    background-color: rgb(255, 0, 234);
+	background-color: rgb(255, 0, 234);
 }
 
 .styled:active {
-    box-shadow: inset -2px -2px 3px rgba(180, 11, 157, 0.6), inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+	box-shadow: inset -2px -2px 3px rgba(180, 11, 157, 0.6), inset 2px 2px
+		3px rgba(0, 0, 0, 0.6);
 }
-input
-{
-    border: none;
-    border-bottom: 2px solid rgb(37, 158, 158);
-    background-color:white;
+
+input {
+	border: none;
+	border-bottom: 2px solid rgb(37, 158, 158);
+	background-color: white;
 }
-.container{
-    border-radius: 5px;
-    background-color:rgb(236, 211, 240)
-      
+
+.container {
+	border-radius: 5px;
+	background-color: rgb(236, 211, 240)
 }
