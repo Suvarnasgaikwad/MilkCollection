@@ -26,9 +26,12 @@
 		<property name="prefix" value="/WEB-INF/" />
 		<property name="suffix" value=".jsp" />
 	</bean>
+	
 	<mvc:annotation-driven />
 	<mvc:resources location="/WEB-INF/resources/"
 		mapping="/resources/**" />
+		
+		
 	<bean id="dataSource"
 		class=" org.springframework.jdbc.datasource.DriverManagerDataSource">
 		<property name="driverClassName"

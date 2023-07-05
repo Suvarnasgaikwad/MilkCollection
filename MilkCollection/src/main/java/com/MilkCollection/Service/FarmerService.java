@@ -27,4 +27,14 @@ public class FarmerService implements FarmInterface {
 		return farm;
 	}
 
+	@Override
+	public  void delFarmer(Integer Id) 
+	{
+		data.delFarmer(Id);
+		
+		
+	}
+
+	
+
 }

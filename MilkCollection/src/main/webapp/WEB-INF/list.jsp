@@ -12,9 +12,11 @@
 <body>
 	<div class="container">
 		<header class="header">List of Farmer</header>
+	 <h5>	${msg1}</h5>
 		<div>
 			<table>
 				<tr>
+				    <th>Index</th>
 					<th>Farmer Id</th>
 					<th>Registration Date</th>
 					<th>First Name</th>
@@ -25,14 +27,14 @@
 				<c:forEach items="${msg}" var="farm" varStatus="status">
 					<tr>
 						<td>${status.index + 1}</td>
+						<td>${farm.id}</td>
 						<td>${farm.date}</td>
 						<td>${farm.fname}</td>
 						<td>${farm.lname}</td>
 						<td>${farm.mobilenum}</td>
 						<td>
 							<div>
-								<button class="favorite styled" type="button">Delete</button>
-								<button class="favorite styled" type="button">Update</button>
+							<a href="delete.sp/${farm.id}" class="favorite styled">Delete</a>
 							</div>
 						</td>
 					</tr>

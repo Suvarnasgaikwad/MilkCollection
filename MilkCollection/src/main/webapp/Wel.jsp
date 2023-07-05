@@ -20,15 +20,15 @@
 		<nav>
 			<a href="reg.jsp" />
 			<button class="favorite styled" type="submit">Registration</button>
-			</form>
+			
 			<form action="./collect.sp">
 				<button class="favorite styled" type="submit">Collection
 					Milk</button>
 			</form>
-			<form action="./list.sp">
+			<a href="./list.sp">
 				<button class="favorite styled" type="submit">List of Farmer
 				</button>
-			</form>
+			</a>
 		</nav>
 		<article style="background-color: blueviolet;">
 			<img src="<c:url value="resources/image/dairy.png"/>">

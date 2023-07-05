@@ -11,7 +11,7 @@
 </head>
 <body>
 	<div class="container">
-		<header class="header"> Registration Form</header>
+		<header class="header"> Registration Form1</header>
 
 		<form action="./register.sp" method="post">
 			<div>
