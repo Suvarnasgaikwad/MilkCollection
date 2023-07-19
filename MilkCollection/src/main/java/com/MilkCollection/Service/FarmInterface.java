@@ -8,5 +8,7 @@ public interface FarmInterface
 	public void createFarmer(Farmer farm);
 	public 	List<Farmer> getFarmer();
 	public void delFarmer(Integer Id);
+	public Farmer getFarmer(int id);
+	public void updateFarmer(Farmer farm);
 	
 }

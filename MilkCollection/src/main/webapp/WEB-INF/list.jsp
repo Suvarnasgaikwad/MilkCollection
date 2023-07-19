@@ -1,4 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+ <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <%@page isELIgnored="false"%>
 <!DOCTYPE html>
 <html lang="en">
@@ -6,13 +7,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Document</title>
-<link rel="stylesheet" href="bootstrap/css/bootstrap-min.css">
+<link rel="stylesheet" href="bootstrap/css/bootstrap-min.css"/>
 <link href="<c:url value="/resources/css/Style2.css"/>" rel="stylesheet" />
 </head>
 <body>
 	<div class="container">
-		<header class="header">List of Farmer</header>
-	 <h5>	${msg1}</h5>
+		<header class="header">List of Farmer
+		<br> ${msg1} </header>
 		<div>
 			<table>
 				<tr>
@@ -34,7 +35,8 @@
 						<td>${farm.mobilenum}</td>
 						<td>
 							<div>
-							<a href="delete.sp/${farm.id}" class="favorite styled">Delete</a>
+							<a href="delete/${farm.id}.sp" class="favorite styled">Delete</a>
+							<a href="edit/${farm.id}.sp" class="favorite styled">Edit</a>
 							</div>
 						</td>
 					</tr>

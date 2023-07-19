@@ -1,6 +1,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
+	<%@page isELIgnored="false"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -10,27 +11,29 @@
 <link href="<c:url value="/resources/css/Style1.css"/>" rel="stylesheet" />
 </head>
 <body>
-	<div class="container">
-		<header class="header"> Registration Form</header>
-
-		<form action="./register.sp">
+	<div class="container"> 
+	<header class="header"> Edit Registration form </header>
+   <form action="/MilkCollection/load.sp">
+          <div>
+				Farmer Id:${msg.id}<input type="hidden" id="txtbox" name="id" value="${msg.id} ">
+			</div>
 			<div>
-				Enter First name:<input type="text" id="txtbox" name="fname">
+				ReEnter First name:<input type="text" id="txtbox" name="fname" value="${msg.fname} ">
 			</div>
 			<br>
 			<div>
-				Enter Last name:<input type="text" id="txtbox" name="lname">
+				ReEnter Last name:<input type="text" id="txtbox" name="lname"value="${msg.lname} ">
 			</div>
 			<br>
 			<div>
-				Enter Mobile no:<input type="text" id="txtbox" name="num">
+				ReEnter Mobile no:<input type="text" id="txtbox" name="mobilenum" value="${msg.mobilenum} ">
 			</div>
 			<br>
-			<button class="favorite styled" type="button">Submit</button>
-	</div>
+			<input class="favorite styled" type="submit">
+			</form>
+			
+	   </div>
 	<br>
-	</form>
-	</div>
 
 </body>
 </html>

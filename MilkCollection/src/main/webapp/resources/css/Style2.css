@@ -25,13 +25,13 @@ tr:nth-child(even) {
 tr:nth-child(odd) {
 	background-color: rgba(166, 182, 182, 0.418);
 }
-
 header {
 	margin-top: 2%;
 	padding-left: 45%;
 	font-size: xx-large;
 	font-weight: bolder;
 }
+
 
 .styled {
 	width: 100px;

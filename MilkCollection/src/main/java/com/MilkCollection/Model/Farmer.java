@@ -1,10 +1,6 @@
 package com.MilkCollection.Model;
 import javax.persistence.GeneratedValue;
-
-
 import java.time.LocalDate;
-import java.util.Date;
-
 import javax.persistence.*;
 @Entity
 public class Farmer 

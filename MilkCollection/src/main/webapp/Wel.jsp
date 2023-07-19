@@ -1,6 +1,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
+    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +9,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Welcome</title>
 <link rel="stylesheet" href="bootstrap/css/bootstrap-min.css">
-<link href="<c:url value="/resources/css/Style.css"/>" rel="stylesheet" />
+<link href="<c:url value="/resources/css/Style.css"/>" rel="stylesheet" type="text/css"/>
 
 </head>
 <body>
@@ -18,14 +18,14 @@
 	</header>
 	<section>
 		<nav>
-			<a href="reg.jsp" />
+			<a href="reg.jsp">
 			<button class="favorite styled" type="submit">Registration</button>
-			
-			<form action="./collect.sp">
+			</a>
+			<form action="./collect">
 				<button class="favorite styled" type="submit">Collection
 					Milk</button>
 			</form>
-			<a href="./list.sp">
+			<a href="list.sp">
 				<button class="favorite styled" type="submit">List of Farmer
 				</button>
 			</a>

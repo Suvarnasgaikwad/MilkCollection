@@ -35,6 +35,19 @@ public class FarmerService implements FarmInterface {
 		
 	}
 
+	@Override
+	public Farmer getFarmer(int id) {
+		Farmer farm=data.getFarmer(id);
+		return farm;
+		
+	}
+
+	@Override
+	public void updateFarmer(Farmer farm) {
+	data.updatefarm(farm);
+		
+	}
+
 	
 
 }

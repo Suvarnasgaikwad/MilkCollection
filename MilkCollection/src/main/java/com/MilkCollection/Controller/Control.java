@@ -38,12 +38,36 @@ public class Control
 		return "list";
 	}
 	
-	@RequestMapping("/delete.sp/{id}")
-	public String del(@PathVariable ("id") int id,Model model)
+	@RequestMapping(value="/delete/{id}.sp",method=RequestMethod.GET)
+	public String del(@PathVariable ("id") int id,ModelMap model)
 	  {
-		service.delFarmer(id);
-		model.addAttribute("msg1", "Success");	
-		return "list";
+		service.delFarmer(id);	
+		List<Farmer>farm=service.getFarmer();
+		model.addAttribute(farm);
+		 model.put("msg",farm);
+		 model.put("msg1", "Delete farm Successfully");
+	    	return "list";
 	  }
-
+	
+	@RequestMapping(value="/edit/{id}.sp",method=RequestMethod.GET)
+	public String edit(@PathVariable ("id") int id,ModelMap model)
+	  {
+		Farmer farm=service.getFarmer(id);
+		 model.addAttribute(farm);
+		 model.put("msg",farm);
+		return "edit";
+	  }
+	@RequestMapping(value="/load.sp")
+	public String load(@ModelAttribute Farmer farm,ModelMap model)
+	  {
+		service.updateFarmer(farm);
+		 System.out.println("Success");
+			List<Farmer>farmer=service.getFarmer();
+			model.addAttribute(farmer);
+			
+			 model.put("msg",farmer);
+			 model.put("msg1", "Update farm Successfully");
+			return "list";
+	  }
+	
 }
